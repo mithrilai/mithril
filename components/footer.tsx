@@ -5,7 +5,7 @@ const YEAR = new Date().getFullYear();
 export function Footer() {
   return (
     <section className="flex flex-col justify-center items-center md:flex-row md:justify-between">
-      <div className="text-sm font-normal text-[#AFAFAF] mb-6 md:mb-0">
+      <div className="text-sm font-normal text-[#999999] mb-6 md:mb-0">
         <p>© {YEAR} Mithril AI, Inc.</p>
       </div>
       <div className="flex flex-wrap space-x-4 text-[10px] md:text-xs font-normal tracking-wider">
