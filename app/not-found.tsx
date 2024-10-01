@@ -1,4 +1,9 @@
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "404",
+  description: "Error 404",
+};
 
 export default function NotFound() {
   return (
