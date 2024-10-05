@@ -59,7 +59,7 @@ export default function RootLayout({
               src={Logo}
               alt="Mithril AI Logo"
               className="mr-16"
-              width={800}
+              width={860}
               height={600}
               priority
             />
