@@ -6,6 +6,7 @@ import { Navbar } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
 import Logo from "@/public/outline-logo.svg";
+import ElvishLogo from "@/public/elvish-logo.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mithrilai.xyz"),
@@ -54,14 +55,24 @@ export default function RootLayout({
         <div className="px-8 py-4 md:px-16 md:py-10">
           <Navbar />
           <div className="absolute right-0 bottom-0 -z-10">
-          <Image
-            src={Logo}
-            alt="Mithril AI Logo"
-            className="mr-16"
-            width={800}
-            height={600}
-            priority
-          />
+            <Image
+              src={Logo}
+              alt="Mithril AI Logo"
+              className="mr-16"
+              width={800}
+              height={600}
+              priority
+            />
+          </div>
+          <div className="absolute left-14 bottom-16 -z-10">
+            <Image
+              src={ElvishLogo}
+              alt="Mithril AI Elvish Logo"
+              className="mr-16"
+              width={90}
+              height={50}
+              priority
+            />
           </div>
           {children}
           <Footer />
