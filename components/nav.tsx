@@ -67,7 +67,7 @@ export function Navbar() {
                 />
               </SheetTitle>
             </SheetHeader>
-            <nav className="mt-10 flex flex-col gap-10 jet-brains">
+            <nav className="mt-10 flex flex-col gap-10">
               <div className="space-y-4">
                 <a
                   href="/research"
@@ -153,8 +153,8 @@ export function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-white text-black px-6 py-2 text-sm rounded-full hover:bg-gray-200 transition-colors">
-                    JOIN US
+                  <button className="bg-white text-black px-6 py-2 text-sm font-medium rounded-full hover:bg-gray-200 transition-colors">
+                    CAREERS
                   </button>
                 </a>
                 <a
@@ -162,7 +162,7 @@ export function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-black text-[#EDEDED] text-sm border border-solid border-[#2B2B2B] px-6 py-2 rounded-full hover:bg-[#111111] transition-colors">
+                  <button className="bg-black text-[#EDEDED] text-sm font-medium border border-solid border-[#2B2B2B] px-6 py-2 rounded-full hover:bg-[#111111] transition-colors">
                     CONTACT
                   </button>
                 </a>
