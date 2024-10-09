@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-3xl md:text-5xl">
         Open Science AI Research Lab
       </h1>
-      <p className="text-lg max-w-sm jet-brains">
+      <p className="text-[17px] leading-7 max-w-sm jet-brains">
         Open models across diverse domains, for everyone, everywhere.
       </p>
       <div className="flex gap-4 items-center">
