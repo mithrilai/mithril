@@ -67,7 +67,7 @@ export function Navbar() {
                 />
               </SheetTitle>
             </SheetHeader>
-            <nav className="mt-10 flex flex-col gap-10">
+            <nav className="mt-10 flex flex-col gap-10 font-[family-name:var(--font-geist-mono)]">
               <div className="space-y-4">
                 <a
                   href="/research"
