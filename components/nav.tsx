@@ -12,6 +12,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import Logo from "@/public/logo.svg";
+import Outline_Logo from "@/public/outline-logo.svg";
 
 export function Navbar() {
   return (
@@ -29,7 +30,7 @@ export function Navbar() {
           <h1 className="text-3xl font-medium ml-2 tracking-widest">MITHRIL</h1>
         </a>
       </div>
-      <div className="flex items-center space-x-4 text-xs font-normal tracking-wider">
+      <div className="flex items-center space-x-4 text-[13px] font-normal font-[family-name:var(--font-geist-mono)] tracking-[1.5px]">
         <div className="hidden md:flex space-x-4">
           <a href="/research" className="hover:text-gray-300">
             RESEARCH
@@ -39,8 +40,8 @@ export function Navbar() {
             BLOG
           </a>
           <span className="text-[#505050]">/</span>
-          <a href="/about" className="hover:text-gray-300">
-            ABOUT
+          <a href="/company" className="hover:text-gray-300">
+            COMPANY
           </a>
         </div>
         <span className="text-[#505050] hidden md:inline">/</span>
@@ -67,28 +68,28 @@ export function Navbar() {
                 />
               </SheetTitle>
             </SheetHeader>
-            <nav className="mt-10 flex flex-col gap-10 font-[family-name:var(--font-geist-mono)]">
+            <nav className="mt-10 flex flex-col gap-10 text-[13px] font-normal font-[family-name:var(--font-geist-mono)] tracking-[1.5px]">
               <div className="space-y-4">
                 <a
                   href="/research"
                   className="text-sm hover:text-gray-300 flex gap-2"
                 >
-                  <span className="text-[#505050]">/</span>
+                  <span className="text-[#505050]">\</span>
                   <h2>RESEARCH</h2>
                 </a>
                 <a
                   href="/blog"
                   className="text-sm hover:text-gray-300 flex gap-2"
                 >
-                  <span className="text-[#505050]">/</span>
+                  <span className="text-[#505050]">\</span>
                   <h2>BLOG</h2>
                 </a>
                 <a
-                  href="/about"
+                  href="/company"
                   className="text-sm hover:text-gray-300 flex gap-2"
                 >
-                  <span className="text-[#505050]">/</span>
-                  <h2>ABOUT</h2>
+                  <span className="text-[#505050]">\</span>
+                  <h2>COMPANY</h2>
                 </a>
               </div>
               <div className="space-y-4">
@@ -147,14 +148,14 @@ export function Navbar() {
                   <h2>INSTAGRAM</h2>
                 </a>
               </div>
-              <div className="text-sm flex flex-col space-y-4">
+              <div className="text-sm flex flex-col space-y-4 font-[family-name:var(--font-geist-mono)] tracking-[1.5px] text-[14px] font-normal">
                 <a
                   href="https://discord.gg/jgy376Jyka"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-white text-black px-6 py-2 text-sm font-medium rounded-full hover:bg-gray-200 transition-colors">
-                    CAREERS
+                  <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors">
+                    JOIN US
                   </button>
                 </a>
                 <a
@@ -162,10 +163,20 @@ export function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-black text-[#EDEDED] text-sm font-medium border border-solid border-[#2B2B2B] px-6 py-2 rounded-full hover:bg-[#111111] transition-colors">
+                  <button className="bg-black text-[#EDEDED] border border-solid border-[#2B2B2B] px-6 py-2 rounded-full hover:bg-[#111111] transition-colors">
                     CONTACT
                   </button>
                 </a>
+              </div>
+              <div className="absolute right-0 bottom-0 -z-10">
+                <Image
+                  src={Outline_Logo}
+                  alt="Mithril AI Logo"
+                  className="mr-16"
+                  width={860}
+                  height={600}
+                  priority
+                />
               </div>
             </nav>
           </SheetContent>
